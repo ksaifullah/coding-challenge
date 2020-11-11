@@ -5,7 +5,6 @@ This coding challenge is designed to assess following software development skill
 -	Transform business problems to automated tests and develop solution (TDD)
 -	Simple Design (Passing tests, reveals intent, DRY, small)
 -	Continuous integration and deployment
--	Ability to use AWS Services
 
 ## Problem - Step 01
 Create a *public* repository in [GitHub](https://github.com/) where the repository name is a [UUID](https://www.uuidgenerator.net/version4). Please keep commiting to this GitHub repository as you develop through rest of the steps.
