@@ -1,7 +1,7 @@
-# Coding Challenge
+# Coding Test
 
 ## Objective:
-This coding challenge is designed to assess following software development skills:
+This coding test is designed to assess following software development skills:
 -	Transform business problems to automated tests and develop solution (TDD)
 -	Simple Design (Passing tests, reveals intent, DRY, small)
 -	Continuous integration and deployment
@@ -123,4 +123,4 @@ Output
 ```
 
 ## Problem - Step 03
-Integrate a CI pipeline with this project that executes all the tests and checks linting for the project. You may choose a CI platform of your choice (e.g. [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions), [CircleCI](https://circleci.com/) and [Travis CI](https://travis-ci.com/) have free plan to use for public projects).
+Integrate a CI pipeline with this project that executes all the tests and checks linting for the project. You may choose a CI platform of your choice (e.g. [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions), [CircleCI](https://circleci.com/) and [Travis CI](https://travis-ci.com/) have free plan to use for public projects). To be able to run tests and linting, use a docker-compose service, so that they don't have any dependency on the host machine.
