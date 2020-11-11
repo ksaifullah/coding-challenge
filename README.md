@@ -1,7 +1,7 @@
 # Coding Test
 
 ## Objective:
-This coding challenge is designed to assess following software development skills:
+This coding test is designed to assess following software development skills:
 -	Transform business problems to automated tests and develop solution (TDD)
 -	Simple Design (Passing tests, reveals intent, DRY, small)
 -	Continuous integration and deployment
