@@ -1,10 +1,11 @@
-# Coding Challenge
+# Coding Test
 
 ## Objective:
 This coding challenge is designed to assess following software development skills:
 -	Transform business problems to automated tests and develop solution (TDD)
 -	Simple Design (Passing tests, reveals intent, DRY, small)
 -	Continuous integration and deployment
+- AWS services
 
 ## Problem - Step 01
 Create a *public* repository in [GitHub](https://github.com/) where the repository name is a [UUID](https://www.uuidgenerator.net/version4). Please keep commiting to this GitHub repository as you develop through rest of the steps.
@@ -123,4 +124,10 @@ Output
 ```
 
 ## Problem - Step 03
-Integrate a CI pipeline with this project that executes all the tests and checks linting for the project. You may choose a CI platform of your choice (e.g. [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions), [CircleCI](https://circleci.com/) and [Travis CI](https://travis-ci.com/) have free plan to use for public projects).
+Integrate a CI pipeline with this project that executes all the tests and checks linting for the project. You may choose a CI platform of your choice (e.g. [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions), [CircleCI](https://circleci.com/) and [Travis CI](https://travis-ci.com/) have free plan to use for public projects). To be able to run tests and linting, use a docker-compose service, so that they don't have any dependency on the host machine.
+
+## Problem - Step 04
+- Extend the application developed in Step 02. Develop a lambda function that receives an *S3 Object Created* event, process the file and put the proceesed output back in S3. The input object is of type `text/plain` and has an S3 key prefix `input/` and output object should be of type `text/plain` and have a key prefix `output/`. Each line of the text in input object are integers seperated by whitespace. Process each line with the function developed for Step 02 and the output of that function goes to output object.
+  ![Diagram](./aws-lambda.png)
+- Use AWS Cloudformation to deploy necessary AWS resources. There should be a docker-compose service to run aws-cli commands (e.g. `aws cloudformation deploy ...`), so that it doesn't matter if the host machine has the aws-cli installed or not.
+- Add necessary instructions in the README.md of this project so that we deploy this application in our AWS account.
