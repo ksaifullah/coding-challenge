@@ -1,4 +1,4 @@
-# coding-challenge
+# Coding Challenge
 
 ## Objective:
 This coding challenge is designed to assess following software development skills:
@@ -7,11 +7,11 @@ This coding challenge is designed to assess following software development skill
 -	Continuous integration and deployment
 -	Ability to use AWS Services
 
-## Problem
-We have broken the problem into multiple steps to you a clear understanding.
+## Problem - Step 01
+Create a *public* repository in [GitHub](https://github.com/) where the repository name is a [UUID](https://www.uuidgenerator.net/version4). Please keep commiting to this GitHub repository as you develop through rest of the steps.
 
-### Step 01
-Develop a function that takes one string input of N number of integers separated by single whitespace. The function then outputs the longest increasing subsequence (increase by any integer) present in that sequence. If more than 1 sequence exists with the longest length, output the earliest one. You may supporting functions as many as you find reasonable.
+## Problem - Step 02
+Develop a function that takes one string input of any number of integers separated by single whitespace. The function then outputs the longest increasing subsequence (increased by any number) present in that sequence. If more than 1 sequence exists with the longest length, output the earliest one. You may develop supporting functions as many as you find reasonable.
 
 #### Test Case 01
 Input
@@ -122,3 +122,6 @@ Output
 ```
 1 5 9
 ```
+
+## Problem - Step 03
+Integrate a CI pipeline with this project that executes all the tests and checks linting for the project. You may choose a CI platform of your choice (e.g. [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions), [CircleCI](https://circleci.com/) and [Travis CI](https://travis-ci.com/) have free plan to use for public projects).
