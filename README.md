@@ -129,5 +129,7 @@ Integrate a CI pipeline with this project that executes all the tests and checks
 ## Problem - Step 04
 - Extend the application developed in Step 02. Develop a lambda function that receives an *S3 Object Created* event, process the file and put the proceesed output back in S3. The input object is of type `text/plain` and has an S3 key prefix `input/` and output object should be of type `text/plain` and have a key prefix `output/`. Each line of the text in input object are integers seperated by whitespace. Process each line with the function developed for Step 02 and the output of that function goes to output object.
   ![Diagram](./aws-lambda.png)
+- Pick a [UUID](https://www.uuidgenerator.net/version4) for S3 bucket name.
+- Configure S3 event to listen to only *S3 Object Created* in `input/` prefix.
 - Use AWS Cloudformation to deploy necessary AWS resources. There should be a docker-compose service to run aws-cli commands (e.g. `aws cloudformation deploy ...`), so that it doesn't matter if the host machine has the aws-cli installed or not.
 - Add necessary instructions in the README.md of this project so that we deploy this application in our AWS account.
