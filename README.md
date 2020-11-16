@@ -3,7 +3,7 @@
 ## Objective:
 This coding test is designed to assess following software development skills:
 -	Transform business problems to automated tests and develop solution (TDD)
--	Simple Design (Passing tests, reveals intent, DRY, small)
+-	Simple Design (Passes tests, reveals intent, DRY, small)
 -	Continuous integration and deployment
 - AWS services
 
