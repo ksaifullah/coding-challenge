@@ -7,7 +7,7 @@ This coding test is designed to assess following software development skills:
 -	Continuous integration and deployment
 
 ## Problem - Step 01
-Create a *public* repository in [GitHub](https://github.com/) where the repository name is a [UUID](https://www.uuidgenerator.net/version4). Please keep commiting to this GitHub repository as you develop through rest of the steps.
+Create a *public* repository in [GitHub](https://github.com/) where the repository name is a [UUID](https://www.uuidgenerator.net/version4). Please keep commiting to this GitHub repository as you develop through rest of the steps. When you are done, share the repository URL with the person who asked you to try this exercise.
 
 ## Problem - Step 02
 Develop a function that takes one string input of any number of integers separated by single whitespace. The function then outputs the longest increasing subsequence (increased by any number) present in that sequence. If more than 1 sequence exists with the longest length, output the earliest one. You may develop supporting functions as many as you find reasonable.
