@@ -125,7 +125,7 @@ Output
 ```
 
 ## Development Environment
-To be able to run tests and linting in a developer machine, use a docker-compose service, so that they don't have any dependency on the host machine.
+To be able to run tests and linting in a developer machine, use a docker-compose service, so that they don't have any dependency on the host machine. For example, we would like to run `docker-compose run test` and that should execute all the 11 test cases described above.
 
 ## Continuous Integration
 Integrate a CI pipeline with this project that executes all the tests and checks linting for the project. You may choose a CI platform of your choice (e.g. [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions), [CircleCI](https://circleci.com/) and [Travis CI](https://travis-ci.com/) have free plan to use for public projects).
